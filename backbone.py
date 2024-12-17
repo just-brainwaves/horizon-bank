@@ -28,9 +28,7 @@ def clear():
             des = int(input("Please Enter The Admin Pin: "))
             if des == 1221:
                 file_path = 'custdata.pkl'
-                # Open the file in write mode with 'wb'
                 with open(file_path, 'wb') as file:
-                    # Write an empty object
                     pickle.dump({}, file)
                 a = input("Please Press Enter To Exit !")
                 break
